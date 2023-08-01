@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("TDLapp.urls")),
     path('Register/', v.register, name="register"),
+    path('', include('django.contrib.auth.urls')),
 ]
